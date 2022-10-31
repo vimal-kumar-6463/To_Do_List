@@ -1,0 +1,26 @@
+   <%- include("header.ejs") -%>
+    
+    <h1 class="container" style="margin : 10px">TO DO LIST</h1>
+    <div class="container box1">
+        <div class="container">
+           
+           <% taskArray.forEach((i)=>{ %>
+            <div class="container">
+                <input type="checkbox" class="container t"><p class="container singletask"><%=i.task %></p>
+            </div>
+                
+           <% }) %>
+        </div>
+        <form class="container" style="margin:20px" action="/" method="post">
+            <div class="form-group">
+                <label class="form-input">TASK :</label><input type="text" class="form-control container" name="taskinput" placeholder="Enter the Task" autocomplete="off">
+            </div>
+        <button type="submit" class="btn btn-primary" style="margin: 20px"><b style="font-size:150%">+</b></button>
+        </form>
+        <form action="/clear" method="post" class="container">
+            <button style="margin: 20px" type="submit" class="btn btn-primary">CLEAR</button>
+         </form> 
+    </div>
+
+    <%- include("footer.ejs") -%>
+

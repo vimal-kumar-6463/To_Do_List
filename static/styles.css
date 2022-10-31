@@ -1,0 +1,50 @@
+.box1{
+    height : auto;
+    width : 500px;
+    background : #FAF4B7;
+    border-radius : 40px;
+    border : 7px solid black;
+}
+
+input{
+    width : 70%;
+}
+
+.singletask {
+    border-radius : 10px;
+    height : 30px;
+    width : auto;
+    background : #F9F9F9;
+    
+}
+
+input:checked+p{
+    text-decoration : line-through;
+    text-decoration-color : black;
+    text-decoration-thickness: 5px;
+}
+
+input[Type="checkbox"]+p{
+    
+    float : right;
+}
+
+h1{
+    background : #FAF4B7;
+    padding : 5px;
+    border : 5px solid black;
+    border-radius : 20px;
+    width : 200px;
+    margin : 10px;
+}
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
